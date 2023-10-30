@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Rathisha - Portfolio</title>
+         <style>
+           body {
+                 font-family: Arial, sans-serif;
+                 margin: 0;
+                 padding: 0;
+                 background-color: #f0f0f0;
+           }
+           header {
+                 background-color:  #333;
+                 color: #fff;
+                 text-align: center;
+                 padding: 2rem 0;
+                 position: relative;
+          }
+          .header-content h1 {
+                 font-size:2.5rem;
+
+         }
+         
+         .porfile-picture {
+             width:100px;
+             height: 100px;
+             border-radius: 75%;
+             object-fit: cover;
+             position: absolute;
+             top: 75px;
+             left: 75px;
+         }
+         
+         nav {
+                 background-color: #333;
+                 color: #fff;
+                 text-align: center;
+         }
+       
+         nav u1 {
+                list-style-type: none;
+                padding: 0;
+
+         }
+       nav ul li {
+           display:  inline;
+           margin: 0  20px;
+      }
+
+     nav ul li a  {
+          text-decoration: none;
+          color:   #fff;
+     }
+   
+     .section-content {
+          backgrount-colour:#fff;
+          pading : 2rem;
+          margin : 1rem;
+          border- radius: 20px;
+         boxshadow : 10px rgba(0,0,0,0.1);
+     }
+download-button {
+          background-colour: #333;
+          color: #fff
+
+          Padding: 0.5rem 1rem;
+          text-decoration: none;
+          border_radius: 20px;
+          display: inline- block;
+          margin-top: 10px;
+}
+
+.download-button: hover  {
+         background-color:#555;
+}
+
+footer  {
+          text-align:  center;
+           Padding: 1rem 0;
+            backgrount-colour: #333
+           color: #fff;
+        }
+
+        ul {
+             list-style-type: disc;
+             padding-left: 20px;
+
+       }
+   </style>
+   </head>
+</head>
+<body>
+    <header>
+      <div class="header-cotent">
+       <h1>Jenisha</h1> 
+        <p>student</p>
+      </div>
+    </header>
+      </u1>
+    </nav>
+    <section id="about">
+      <div class="section-content">
+        <h2>About</h2>
+        <p>
+          Hello everyone I am a student of ST.ALPHONSA COLLEGE OF ARTS AND SCIENCE
+        </p>
+      </div>
+    </section>
+    <section id="skills">
+      <div class="section-content">
+        <h2>skills</h2>
+        <u1>
+          <li>Python</li>
+          <li>Java</li>
+          <li>ML</li>
+        </u1>
+      </div>
+    </section>
+    <section id="education">
+      <div class="section-content">
+        <h2>education</h2>
+        <p>B.sc Computer Science</p>
+         <p>ST.ALPHONSA COLLEGE</p>
+      </div>
+    </section>
+    <section id="Contact">
+      <div class="section-content">
+        <h2>Contact</h2>
+        <u1>
+          <li>Email Id:jenisha15022004@gmail.com</li>
+        </u1>
+      </div>
+    </section>
+    <section id="resume">
+      <center>
+        <div class="section-content">
+          <h2>Resume</h2>
+          <a href="https://docs.google.com/document/d/1kdgArqT3dVA129rvwvItkdBdgIDVSOq7jPhYFS6nSvk/edit?usp=drive_link"
+class="download-button">Download CV</a>
+        </div>
+      </center>
+    </section>
+    <footer>
+      <p>&copy;2023 Jenisha</p>
+    </footer>
+    <script>
+      document.querySelectorAll('a[herf="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefult();
+          const targetid = this.getAttribute("herf").substring(1);
+          const targetElement = document.getElementById(targetId);
+        });
+      });
+    </script>
+  </body>
+ </html>
